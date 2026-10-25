@@ -19,7 +19,7 @@ promote.
 - Harassment, threats, or discriminatory language.
 - Impersonation of Pi Network, the Pi Core Team, a PiRC maintainer, or another
   contributor.
-- Posting private keys, seed phrases, wallet addresses, or personal data.
+- Posting private keys, seed phrases, real wallet addresses, or personal data.
 - Price pumping, referral spam, or investment solicitation.
 - Repeatedly reopening a closed objection without new evidence.
 - Deliberately misrepresenting a draft as accepted or official.

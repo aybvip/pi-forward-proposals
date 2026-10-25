@@ -120,7 +120,8 @@ implement it.
 - changing Pi's consensus, issuance, or mining;
 - minting Pi;
 - taking custody of a user's Pi;
-- automatic transactions;
+- automatic transactions initiated by this repository (CP-04 specifies a
+  conditional interface; it does not execute it);
 - a 24-word phrase, private key, or seed phrase anywhere.
 
 **Source:** design rule; no official source is needed to avoid proposing a protocol

@@ -8,10 +8,10 @@ cannot be accepted or rejected cleanly.
 So the framework is split into four proposals. They share one thesis:
 
 > PiRC1 and PiRC2 define a token design and a subscription rail. They do not define
-> who gets priority access, how contribution is rewarded, how multi-sector utility
-> is described, or how utility rewards are settled. Those are policy and metadata
-> layers that can be specified without changing Pi's consensus or PiRC1's core
-> formulas.
+> account-level priority access, a general contribution-reward programme, a
+> multi-sector utility schema, or reward settlement against a reserve. Those are
+> policy and metadata layers that can be specified without changing Pi's consensus
+> or PiRC1's core formulas.
 
 ## The four layers
 

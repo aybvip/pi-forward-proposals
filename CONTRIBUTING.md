@@ -21,7 +21,7 @@ testable, or more honest about its limits.
 
 ## What is not welcome
 
-- Personal data, KYC data, wallet addresses, private keys, or seed phrases.
+- Personal data, KYC data, real wallet addresses, private keys, or seed phrases.
 - Price predictions, promotion, referral links, or "when moon" content.
 - Impersonation of Pi Network, the Pi Core Team, or a PiRC maintainer.
 - Claims that a draft is official or accepted without a public statement from the

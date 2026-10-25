@@ -9,7 +9,7 @@ the repository as a whole, and the evidence that would falsify each proposal.
 
 | Threat | How it works | Mitigation in this repo | Residual risk |
 |---|---|---|---|
-| **Proposal laundering** | a screenshot or quote makes a draft look official | every page says "unofficial"; local IDs; non-claims; no PiRC numbers | someone can still crop the disclaimer |
+| **Proposal laundering** | a screenshot or quote makes a draft look official | README and every proposal say "unofficial"; local IDs; non-claims; no PiRC numbers | someone can still crop the disclaimer |
 | **Source drift** | PiRC1/PiRC2 changes; an old quote is presented as current | pinned commits; `Last source check`; `source-change` issue label | pins are not automatically monitored |
 | **False precision** | a formula looks authoritative because it has decimals | worked examples; test vectors; assumptions labelled | readers may skip labels |
 | **Scope creep** | one proposal grows into a framework that cannot be reviewed | one change per proposal; addressee stated | pressure to add "one more thing" |

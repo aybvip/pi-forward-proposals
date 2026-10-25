@@ -113,7 +113,7 @@ A higher level is not a recommendation. It is a narrower claim.
 1. The issuer opens a pull request adding one JSON file under `registry/<network>/`.
 2. CI runs the shape check on the submitted file. In this repository,
    `npm run check:spec` checks the example set; a production registry must run the
-   same checker on every file under `registry/`.
+   same validation logic on every file under `registry/`.
 3. A reviewer checks the claimed level:
    - `L0`: no external check; merge if the shape is valid.
    - `L1`: verify the signature against a key published on the issuer's domain.

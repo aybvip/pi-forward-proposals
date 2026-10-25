@@ -35,6 +35,7 @@ Fixed vectors:
 | General commitment `900` | accepted `800`; refund `100`; tokens `8,000` |
 | Priority demand `10,000`, general demand `60,000` | spill `10,000`; accepted `70,000`; `p_list=0.07` |
 | Priority demand `0`, general demand `50,000` | spill `20,000`; accepted `50,000`; `p_list=0.05` |
+| `ρ=1`, priority demand `30,000`, general demand `90,000` | priority cap `100,000`; general cap `0`; accepted `30,000`; general accepted `0`; `p_list=0.03` |
 
 ### 2. CP-02 arithmetic
 
@@ -91,7 +92,7 @@ Fixed vectors:
 
 ### 5. Syntax
 
-`npm run lint` runs `node --check` over every module in `math/` and `spec/`.
+`npm run lint` runs `node --check` on each current module in `math/` and `spec/`.
 
 ---
 

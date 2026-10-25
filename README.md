@@ -92,8 +92,8 @@ Every proposal in this repository follows the same rules.
 3. **Label every claim.** `[OFFICIAL]`, `[DERIVED]`, `[ASSUMPTION]`, `[OPEN]`.
 4. **Every formula has a worked example and a test vector.**
 5. **Every proposal has a threat model and a non-claims section.**
-6. **No personal data, no private keys, no 24-word phrases, no automatic
-   transactions.**
+6. **No personal data, no private keys, no 24-word phrases, and no transactions
+   initiated by this repository.**
 7. **No price predictions and no promises of return.**
 
 ---

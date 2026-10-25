@@ -80,8 +80,8 @@ refund, and coverage.
 | Reward contract | holds or references the reward pool; enforces coverage and vesting |
 
 One entity may play more than one role, but the attestation must be independent of
-the delivery claim for `L3`-style coverage. A self-attested reserve is allowed only
-with a clear label.
+the delivery claim for high-assurance coverage (CP-03 `L3` is the reference label).
+A self-attested reserve is allowed only with a clear label.
 
 ### 4.2 Interface
 
