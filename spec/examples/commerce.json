@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "token": {
+    "network": "pi-testnet",
+    "asset_code": "SHOPPI",
+    "issuer_account": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "display_name": "ShopPi Demo",
+    "description": "Synthetic testnet example for the CP-03 commerce sector."
+  },
+  "issuer": {
+    "legal_name": "ShopPi Demo Ltd.",
+    "jurisdiction": "GB",
+    "contact_url": "https://shopi.example/contact",
+    "kyb": {
+      "status": "self-declared",
+      "evidence_url": "https://shopi.example/kyb",
+      "verified_at": "2026-09-01"
+    }
+  },
+  "sectors": ["commerce"],
+  "utility": {
+    "summary": "Demo discount credits redeemable at participating testnet merchants.",
+    "redemption_channels": [
+      {
+        "type": "app",
+        "url": "https://shopi.example/redeem",
+        "description": "In-app checkout"
+      }
+    ],
+    "terms_url": "https://shopi.example/terms",
+    "availability": "testnet-only"
+  },
+  "audits": [],
+  "verification": {
+    "level": "L0",
+    "method": "self-declaration",
+    "evidence_url": "https://registry.example/records/shopi-demo",
+    "verified_at": "2026-09-01"
+  },
+  "issued_at": "2026-09-01",
+  "expires_at": "2027-09-01"
+}

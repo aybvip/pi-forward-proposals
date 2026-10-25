@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aybvip/pi-forward-proposals/spec/schemas/reward-receipt.schema.json",
+  "title": "Pi Utility Reward Receipt",
+  "description": "A settlement record for CP-04. Personal data stays off-chain; only a salted hash of the app-local uid is recorded.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "subscription_id",
+    "delivery_id",
+    "recipient_uid_hash",
+    "asset",
+    "amount",
+    "period",
+    "delivered_at",
+    "attestation_id",
+    "status",
+    "issuer_signature",
+    "created_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "receipt_id": {
+      "type": "string",
+      "pattern": "^rcpt_[A-Za-z0-9_-]{6,64}$"
+    },
+    "subscription_id": {
+      "type": "string",
+      "pattern": "^sub_[A-Za-z0-9_-]{6,64}$"
+    },
+    "delivery_id": {
+      "type": "string",
+      "pattern": "^del_[A-Za-z0-9_-]{6,64}$"
+    },
+    "recipient_uid_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$",
+      "description": "hash(project_salt || app-local uid); never the raw uid."
+    },
+    "asset": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 16
+    },
+    "amount": {
+      "type": "number",
+      "minimum": 0
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "delivered_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "attestation_id": {
+      "type": "string",
+      "pattern": "^att_[A-Za-z0-9_-]{6,64}$"
+    },
+    "status": {
+      "enum": ["pending", "settled", "refunded", "failed"]
+    },
+    "issuer_signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scheme", "public_key", "value", "signed_at"],
+      "properties": {
+        "scheme": {
+          "enum": ["ed25519", "secp256k1", "other"]
+        },
+        "public_key": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9+/=_-]{32,128}$"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9+/=_-]{32,256}$"
+        },
+        "signed_at": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 500
+    }
+  }
+}

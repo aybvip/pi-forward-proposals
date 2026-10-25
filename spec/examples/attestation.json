@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "attestation_id": "att_2026_10_demo01",
+  "issuer": {
+    "legal_name": "LearnPi Demo Foundation",
+    "jurisdiction": "DE",
+    "contact_url": "https://learnpi.example/contact"
+  },
+  "subscription_contract": {
+    "network": "pi-testnet",
+    "contract_id": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "service_id": "service_learning_30d"
+  },
+  "reserve": {
+    "asset": "PI",
+    "value": 12000,
+    "as_of": "2026-10-01",
+    "custodian": "Example Custody Account",
+    "evidence_url": "https://learnpi.example/reserve/2026-10-01"
+  },
+  "outstanding_rewards": {
+    "asset": "PI",
+    "value": 10000,
+    "as_of": "2026-10-01",
+    "method": "accrued, unsettled, excluding unvested cancellable rewards"
+  },
+  "coverage_ratio": 1.2,
+  "attestor": {
+    "name": "Example Attestation LLP",
+    "role": "independent reserve attestor",
+    "url": "https://attestation.example",
+    "signature": {
+      "scheme": "ed25519",
+      "public_key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "signed_at": "2026-10-01"
+    }
+  },
+  "issued_at": "2026-10-01",
+  "expires_at": "2026-11-01",
+  "notes": "Synthetic example. Not a real reserve or a real attestation."
+}

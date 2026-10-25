@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "token": {
+    "network": "pi-testnet",
+    "asset_code": "LEARNPI",
+    "issuer_account": "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
+    "display_name": "LearnPi Demo",
+    "description": "Synthetic testnet example for the CP-03 education sector."
+  },
+  "issuer": {
+    "legal_name": "LearnPi Demo Foundation",
+    "jurisdiction": "DE",
+    "contact_url": "https://learnpi.example/contact",
+    "kyb": {
+      "status": "platform-verified",
+      "evidence_url": "https://learnpi.example/kyb",
+      "verified_at": "2026-06-10"
+    }
+  },
+  "sectors": ["education", "social"],
+  "utility": {
+    "summary": "Course access credits with a published refund policy for missed cohorts.",
+    "redemption_channels": [
+      {
+        "type": "app",
+        "url": "https://learnpi.example/courses",
+        "description": "Course catalogue"
+      },
+      {
+        "type": "web",
+        "url": "https://learnpi.example/redeem",
+        "description": "Web redemption"
+      }
+    ],
+    "terms_url": "https://learnpi.example/terms",
+    "availability": "regional"
+  },
+  "audits": [
+    {
+      "auditor": "Example Audit Co.",
+      "url": "https://audit.example/learnpi-2026",
+      "date": "2026-06-01",
+      "scope": "Course access accounting; not a token audit."
+    }
+  ],
+  "verification": {
+    "level": "L2",
+    "method": "kyb-review",
+    "evidence_url": "https://registry.example/records/learnpi-demo",
+    "verified_at": "2026-06-15"
+  },
+  "issued_at": "2026-06-15",
+  "expires_at": "2027-06-30",
+  "signature": {
+    "scheme": "ed25519",
+    "public_key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "signed_at": "2026-06-15"
+  }
+}

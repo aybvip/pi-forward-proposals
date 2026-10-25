@@ -1,0 +1,16 @@
+{
+  "name": "pi-forward-proposals",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Unofficial, evidence-labelled policy proposals for the Pi ecosystem.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check math/priority.mjs && node --check math/contribution.mjs && node --check math/coverage.mjs && node --check spec/check-examples.mjs",
+    "check:spec": "node spec/check-examples.mjs"
+  }
+}

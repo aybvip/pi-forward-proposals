@@ -1,0 +1,36 @@
+# Pi Forward Proposals
+
+> Unofficial, evidence-labelled policy proposals for the Pi ecosystem.
+> Not affiliated with, endorsed by, or operated by Pi Network.
+
+## Canonical pages
+
+- [README](https://github.com/aybvip/pi-forward-proposals/blob/main/README.md)
+- [Framework note](https://github.com/aybvip/pi-forward-proposals/blob/main/FRAMEWORK.md)
+- [CP-01 — Pioneer Priority](https://github.com/aybvip/pi-forward-proposals/blob/main/proposals/CP-01-pioneer-priority.md)
+- [CP-02 — Contribution Rewards](https://github.com/aybvip/pi-forward-proposals/blob/main/proposals/CP-02-contribution-rewards.md)
+- [CP-03 — Utility Registry](https://github.com/aybvip/pi-forward-proposals/blob/main/proposals/CP-03-utility-registry.md)
+- [CP-04 — Reward Settlement](https://github.com/aybvip/pi-forward-proposals/blob/main/proposals/CP-04-reward-settlement.md)
+- [Constraints](https://github.com/aybvip/pi-forward-proposals/blob/main/evidence/CONSTRAINTS.md)
+- [Non-claims](https://github.com/aybvip/pi-forward-proposals/blob/main/evidence/NON_CLAIMS.md)
+
+## Key constraints
+
+1. Pi is fungible; there is no per-coin origin. "Mined Pi priority" must be
+   account-level, not coin-level.
+2. Pi identity is app-local; third-party apps cannot read KYC or cross-app activity.
+3. Evidence is not a score. Any reward programme must publish its weights.
+4. Only published PiRC mechanisms are treated as facts.
+5. No protocol changes, no Pi minting, no custody.
+
+## Status
+
+Draft v0.1. No proposal is accepted or endorsed. PiRC numbers are not claimed.
+
+## Tests
+
+```sh
+npm test
+npm run lint
+npm run check:spec
+```

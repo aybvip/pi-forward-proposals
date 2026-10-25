@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you cite this work, cite the version and the specific proposal ID (CP-01 … CP-04)."
+title: "Pi Forward Proposals"
+abstract: "Unofficial, evidence-labelled policy proposals for the Pi ecosystem. Not affiliated with or endorsed by Pi Network."
+authors:
+  - name: "aybvip"
+version: "0.1.0"
+date-released: "2026-10-25"
+url: "https://github.com/aybvip/pi-forward-proposals"
+repository-code: "https://github.com/aybvip/pi-forward-proposals"
+license: MIT
+keywords:
+  - pi-network
+  - pirc
+  - proposals
+  - tokenomics
+  - utility
+  - soroban
